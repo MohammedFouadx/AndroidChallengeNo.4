@@ -54,6 +54,17 @@ class MainActivity : AppCompatActivity() {
             updateQuestion()
         }
 
+        prevButton.setOnClickListener{
+
+
+            if (currentIndex==0){
+                Toast.makeText(this,"There is no question before",Toast.LENGTH_LONG).show()
+            }else{
+                currentIndex = (currentIndex -1)
+                updateQuestion()
+            }
+        }
+
 
     }
 
